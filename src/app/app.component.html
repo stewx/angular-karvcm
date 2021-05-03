@@ -1,13 +1,26 @@
 <h1>To-Do List</h1>
 
-<input type="text" class="result">
-<button>Add</button>
-      
-<ul>
-  <li>List</li>
-  <li>Goes </li>
-  <li>Here</li>
-</ul>
+<form>
+  <input type="text" class="result">
+  <button>Add</button>
+
+  <ul>
+    <li>List <span class="remove-button">x</span></li>
+    <li>Goes <span class="remove-button">x</span></li>
+    <li>Here <span class="remove-button">x</span></li>
+  </ul>
+
+  <p>Viewing x items in list</p>
+
+  <input type="radio" id="all" name="view" value="all">
+  <label for="all">All</label><br>
+  <input type="radio" id="completed" name="view" value="completed">
+  <label for="completed">Completed</label><br>
+  <input type="radio" id="incomplete" name="view" value="incomplete">
+  <label for="incomplete">Incomplete</label>
+
+</form>
+
 
 <div style="margin-top:10rem; margin-left: 2rem">
 <h2>Task List</h2>
@@ -15,13 +28,11 @@
 
      <li>Add items to list using service and Observable</li>
      <li>Remove items from list</li>
-     <li>Make the C button work</li>
-     <li>Make the calculator multiply</li>
-     <li>Make the calculator divide</li>
-     <li>When you push a button, make the button turn blue for 2 seconds</li>
-     <li>When you push a button, make every other button orange for 2 seconds.</li>
-     <li>Add an on/off switch to the UI and, using an Angular service, disable every button (not counting the on/off switch) when the calculator is off
-</li>
+     <li>Make the "Completed" view work</li>
+     <li>Make the "Incomplete" view work</li>
+     <li>Make it display a count of items using only the async pipe</li>
+     <li>Log all changes to a web service (see service code)</li>
+
   </ol>
 
 </div>
